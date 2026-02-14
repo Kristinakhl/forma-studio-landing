@@ -205,14 +205,36 @@
           
         </picture>
 
-        <form action="" class="catalog__form">
-          <h3 class="catalog__form-title">Leave your email to receive our project catalog</h3>
-          <p class="catalog__form-text">The catalog will help you choose a style and plan your layout.</p>
-          <input class="catalog__form-input" type="email" placeholder="Enter your email">
+        <form action="" class="catalog__form" id="catalogForm">
+          <h3 class="catalog__form-title">
+            Leave your email to receive our project catalog
+          </h3>
+        
+          <p class="catalog__form-text">
+            The catalog will help you choose a style and plan your layout.
+          </p>
+        
+          <input 
+            class="catalog__form-input" 
+            type="email" 
+            name="email"
+            id="catalogEmail"
+            placeholder="Enter your email"
+          >
+        
+          <span class="form-error" id="emailError"></span>
+        
           <label class="catalog__form-label">
-            <input class="catalog__form-checkbox" type="checkbox">
+            <input 
+              class="catalog__form-checkbox" 
+              type="checkbox"
+              id="catalogCheckbox"
+            >
             I agree to the processing of personal data
           </label>
+        
+          <span class="form-error" id="checkboxError"></span>
+        
           <button class="catalog__form-btn" type="submit">
             Get the catalog
           </button>
@@ -236,14 +258,14 @@
     <div class="container">
       <div class="request__inner">
         <div class="request__inner-form">
-          <h2 class="requesr__title section__title">
+          <h2 class="request__title section__title">
             Submit a request and we will assist you with your project
           </h2>
-          <form class="request__form">
-          <input type="email" class="request__form-input" placeholder="Enter your email">
-          <button class="request__form-btn" type="submit">Submit a request</button>
-
-        </form>
+          <form id="requestForm" class="request__form">
+            <input type="email" id="requestEmail" class="request__form-input" placeholder="Enter your email">
+            <button class="request__form-btn" type="submit">Submit a request</button>
+          </form>
+          
       </div>
       </div>
     </div>

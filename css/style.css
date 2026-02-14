@@ -551,7 +551,18 @@ input::placeholder {
     font-size: 14px;
     line-height: 1.6;
 }
-
+.form-error {
+    display: block;
+    color: #c0392b;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+  }
+  
+  .input-error {
+    border: 2px solid #c0392b;
+  }
+  
 
 .menu__list a:hover,
 .footer__nav-link:hover,
